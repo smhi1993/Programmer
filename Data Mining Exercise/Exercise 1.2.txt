@@ -1,0 +1,9 @@
+'Hossein' , 200
+'Reza' , 60
+'Mahdi' , 50
+'Ali' , 110
+'Hassan' , 400
+'Mohammad' , 95
+'Salman' , 80
+'Abbas' , 150
+'Hadi' , 170

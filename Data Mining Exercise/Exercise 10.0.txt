@@ -1,0 +1,4 @@
+We frequently need to determine whether a string simply contains whitespaces or not. It would be extremely helpful and
+time-saving if we could check this problem using an in-built function. The Python isspace() function can address this
+problem in just two lines of code. When we just have spacing characters as input, the Python isspace() function comes
+in handy.
