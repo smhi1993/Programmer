@@ -1,4 +1,4 @@
-#A program that gets two numbers and prints their sum.
+# A program that gets two numbers and prints their sum.
 def sum2nums(a = None , b = None):
     if a and b != None:
         c = a + b

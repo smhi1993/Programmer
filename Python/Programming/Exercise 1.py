@@ -1,4 +1,4 @@
-#A program that gets a number and multiply it by 3.
+# A program that gets a number and multiply it by 3.
 def numX3(a = False):
     if not a == False:
         a *= 3

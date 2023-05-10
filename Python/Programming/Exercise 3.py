@@ -1,4 +1,4 @@
-#A program that gets a mark and prints it's status.
+# A program that gets a mark and prints it's status.
 def markStatus(a = False):
     if not a == False:
         if a > 20:
