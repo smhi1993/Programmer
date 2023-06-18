@@ -1,0 +1,40 @@
+
+
+BFS :: 
+
+No of Expanded Nodes: 1792
+No of Explored Nodes: 1797
+
+
+
+< @Depth:0 State (300, 300, 1, 0, 0) >
+
+ take 100 missionaries and 100 cannibals from the original shore to the new shore.
+
+< @Depth:1 State (200, 200, 0, 100, 100) >
+
+ take 100 missionaries and 96 cannibals back from the new shore to the original shore.
+
+< @Depth:2 State (300, 296, 1, 0, 4) >
+
+ take 102 missionaries and 98 cannibals from the original shore to the new shore.
+
+< @Depth:3 State (198, 198, 0, 102, 102) >
+
+ take 1 missionaries and 1 cannibals back from the new shore to the original shore.
+
+< @Depth:4 State (199, 199, 1, 101, 101) >
+
+ take 199 missionaries and 1 cannibals from the original shore to the new shore.
+
+< @Depth:5 State (0, 198, 0, 300, 102) >
+
+ take 0 missionaries and 2 cannibals back from the new shore to the original shore.
+
+< @Depth:6 State (0, 200, 1, 300, 100) >
+
+ take 0 missionaries and 200 cannibals from the original shore to the new shore.
+
+< @Depth:7 State (0, 0, 0, 300, 300) >
+
+ Elapsed time in BFS: 34979.74ms

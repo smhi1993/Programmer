@@ -19,10 +19,11 @@ def vacuum_world():
         if status_input == '1':
             print("Location A is Dirty.")
             #Suck the dirt and mark it as Clean
-            goal_state['A'] = '0'
+            current_state['A'] = '0'
             cost += 1                      #Cost for Suck
-            print("Cost for CLEANING Location A is: " + str(cost))
+            print("COST for CLEANING Location A is: " + str(cost))
             print("Location A has been Cleaned.")
+            print("Current World State is: " + str(current_state))
             if status_input_complement == '1':
                 #If B is Dirty
                 print("Location B is Dirty.")
@@ -30,18 +31,21 @@ def vacuum_world():
                 cost += 1                       #Cost for Moving Right
                 print("COST for Moving RIGHT to the Location B is: " + str(cost))
                 #Suck the dirt and mark it as Clean
-                goal_state['B'] = '0'
+                current_state['B'] = '0'
                 cost += 1                       #Cost for Suck
                 print("COST for CLEANING Location B is: " + str(cost))
                 print("Location B has been Cleaned.")
+                print("Current World State is: " + str(current_state))
             else:
                 #Mark it as Clean
                 print("Location B is already Clean.")
                 print("No action, so Total COST is: " + str(cost))
+                print("Current World State is: " + str(current_state))
         if status_input == '0':
             #Mark it as Clean
             print("Location A is already Clean.")
             print("No action, so Total COST is: " + str(cost))
+            print("Current World State is: " + str(current_state))
             if status_input_complement == '1':
                 #If B is Dirty
                 print("Location B is Dirty.")
@@ -49,14 +53,16 @@ def vacuum_world():
                 cost += 1                       #Cost for Moving Right
                 print("COST for Moving RIGHT is: " + str(cost))
                 #Suck the dirt and mark it as Clean
-                goal_state['B'] = '0'
+                current_state['B'] = '0'
                 cost += 1                       #Cost for Suck
-                print("Cost for CLEANING Location B is: " + str(cost))
+                print("COST for CLEANING Location B is: " + str(cost))
                 print("Location B has been Cleaned.")
+                print("Current World State is: " + str(current_state))
             else:
                 #Mark it as Clean
                 print("Location B is already Clean.")
                 print("No action, so Total COST is: " + str(cost))
+                print("Current World State is: " + str(current_state))
     else:
         current_state = {'A': status_input_complement, 'B': status_input}
         print("Current World State is: " + str(current_state))
@@ -65,10 +71,11 @@ def vacuum_world():
         if status_input == '1':
             print("Location B is Dirty.")
             #Suck the dirt and mark it as Clean
-            goal_state['B'] = '0'
+            current_state['B'] = '0'
             cost += 1                           #Cost for Suck
             print("COST for CLEANING Location B is: " + str(cost))
             print("Location B has been Cleaned.")
+            print("Current World State is: " + str(current_state))
             if status_input_complement == '1':
                 #If A is Dirty
                 print("Location A is Dirty.")
@@ -76,18 +83,21 @@ def vacuum_world():
                 cost += 1                       #Cost for Moving Right
                 print("COST for Moving LEFT is: " + str(cost))
                 #Suck the dirt and mark it as Clean
-                goal_state['A'] = '0'
+                current_state['A'] = '0'
                 cost += 1                       #Cost for Suck
-                print("Cost for CLEANING Location A is: " + str(cost))
+                print("COST for CLEANING Location A is: " + str(cost))
                 print("Location A has been Cleaned.")
+                print("Current World State is: " + str(current_state))
             else:
                 # Mark it as Clean
                 print("Location A is already Clean.")
                 print("No action, so Total COST is: " + str(cost))
+                print("Current World State is: " + str(current_state))
         else:
             #Mark it as Clean
             print("Location B is already Clean.")
             print("No action, so Total COST is: " + str(cost))
+            print("Current World State is: " + str(current_state))
             if status_input_complement == '1':
                 #If A is Dirty
                 print("Location A is Dirty.")
@@ -95,14 +105,16 @@ def vacuum_world():
                 cost += 1                       #Cost for Moving Right
                 print("COST for Moving LEFT is: " + str(cost))
                 #Suck the dirt and mark it as Clean
-                goal_state['A'] = '0'
+                current_state['A'] = '0'
                 cost += 1                       #Cost for Suck
-                print("Cost for CLEANING Location A is: " + str(cost))
+                print("COST for CLEANING Location A is: " + str(cost))
                 print("Location A has been Cleaned.")
+                print("Current World State is: " + str(current_state))
             else:
                 #Mark it as Clean
                 print("Location A is already Clean.")
                 print("No action, so Total COST is: " + str(cost))
+                print("Current World State is: " + str(current_state))
     #Done Cleaning
     print("GOAL STATE:")
     print(goal_state)

@@ -1,0 +1,64 @@
+
+
+DFS :: 
+
+No of Expanded Nodes: 14
+No of Explored Nodes: 1549
+
+
+
+< @Depth:0 State (300, 300, 1, 0, 0) >
+
+ take 100 missionaries and 100 cannibals from the original shore to the new shore.
+
+< @Depth:1 State (200, 200, 0, 100, 100) >
+
+ take 100 missionaries and 99 cannibals back from the new shore to the original shore.
+
+< @Depth:2 State (300, 299, 1, 0, 1) >
+
+ take 0 missionaries and 200 cannibals from the original shore to the new shore.
+
+< @Depth:3 State (300, 99, 0, 0, 201) >
+
+ take 0 missionaries and 100 cannibals back from the new shore to the original shore.
+
+< @Depth:4 State (300, 199, 1, 0, 101) >
+
+ take 150 missionaries and 49 cannibals from the original shore to the new shore.
+
+< @Depth:5 State (150, 150, 0, 150, 150) >
+
+ take 50 missionaries and 50 cannibals back from the new shore to the original shore.
+
+< @Depth:6 State (200, 200, 1, 100, 100) >
+
+ take 200 missionaries and 0 cannibals from the original shore to the new shore.
+
+< @Depth:7 State (0, 200, 0, 300, 100) >
+
+ take 0 missionaries and 100 cannibals back from the new shore to the original shore.
+
+< @Depth:8 State (0, 300, 1, 300, 0) >
+
+ take 0 missionaries and 200 cannibals from the original shore to the new shore.
+
+< @Depth:9 State (0, 100, 0, 300, 200) >
+
+ take 150 missionaries and 50 cannibals back from the new shore to the original shore.
+
+< @Depth:10 State (150, 150, 1, 150, 150) >
+
+ take 100 missionaries and 100 cannibals from the original shore to the new shore.
+
+< @Depth:11 State (50, 50, 0, 250, 250) >
+
+ take 49 missionaries and 49 cannibals back from the new shore to the original shore.
+
+< @Depth:12 State (99, 99, 1, 201, 201) >
+
+ take 99 missionaries and 99 cannibals from the original shore to the new shore.
+
+< @Depth:13 State (0, 0, 0, 300, 300) >
+
+ Elapsed time in DFS: 259.89ms
