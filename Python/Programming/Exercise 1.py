@@ -1,12 +1,12 @@
-# A program that gets a number and multiply it by 3.
-def numX3(a = False):
-    if not a == False:
+# Program that gets a number and multiply it by 3.
+def numX3(a = None):
+    if a is not None:
         a *= 3
     else:
-        a = input('Enter a number:\n')
-        a = int(a)
+        a = int(input('Enter a number:\n'))
         a *= 3
     print(a)
+
 
 if __name__ == '__main__':
     numX3()

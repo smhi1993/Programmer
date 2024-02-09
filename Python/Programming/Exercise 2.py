@@ -1,22 +1,19 @@
-# A program that gets two numbers and prints their sum.
+# Program that gets two numbers and prints their sum.
 def sum2nums(a = None , b = None):
-    if a and b != None:
+    if a is not None and b is not None:
         c = a + b
-    elif a != None and b == None:
-        b = input('Enter a number:\n')
-        b = int(b)
+    elif a is not None and b is None:
+        b = int(input('Enter a number:\n'))
         c = a + b
-    elif a == None and b != None:
-        a = input('Enter a number:\n')
-        a = int(a)
+    elif a is None and b is not None:
+        a = int(input('Enter a number:\n'))
         c = a + b
     else:
-        a = input('Enter a number:\n')
-        a = int(a)
-        b = input('Enter a number:\n')
-        b = int(b)
+        a = int(input('Enter a number:\n'))
+        b = int(input('Enter a number:\n'))
         c = a + b
     print(c)
+
 
 if __name__ == '__main__':
     sum2nums()

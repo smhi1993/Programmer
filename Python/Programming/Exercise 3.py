@@ -1,6 +1,6 @@
-# A program that gets a mark and prints it's status.
-def markStatus(a = False):
-    if not a == False:
+# Program that gets a mark and prints it's status.
+def markStatus(a = None):
+    if a is not None:
         if a > 20:
             print('Error Value!')
         elif 20 >= a > 17:
@@ -12,8 +12,7 @@ def markStatus(a = False):
         else:
             print('Mark' , a , 'is not passed!')
     else:
-        a = input('Enter a number:\n')
-        a = int(a)
+        a = int(input('Enter a number:\n'))
         if a > 20:
             print('Error Value!')
         elif 20 >= a > 17:
@@ -24,6 +23,7 @@ def markStatus(a = False):
             print('Mark' , a , 'is passed!')
         else:
             print('Mark' , a , 'is not passed!')
+
 
 if __name__ == '__main__':
     markStatus()
